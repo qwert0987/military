@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+  <div class="publicHeader">
+    <div class="header">
+      <span class="pageTitle"><b>登录</b></span>
+      <span class="loginBar">
+			  <b>没有账号？立即 <a target="_blank" href="register.html">注册</a></b>
+			  <b class="gohome"><a href="javascript:;">首页</a></b>
+		  </span>
+    </div>
+  </div>
+  <div class="loginWarp">
+    <div class="loginMain">
+      <div class="login">
+        <form method="post" action="">
+          <span class="title">用户登录</span>
+          <em class="loginError"></em>
+          <span class="userEmail">
+            <input type="text" name="email" value="" style="ime-mode:disabled;" placeholder="请输入邮箱地址/手机号码" />
+          </span>
+          <span class="userPassword">
+            <input type="password" name="password" value="" placeholder="密码" />
+          </span>
+          <span class="loginVerify"></span>
+          <div class="remmber">
+            <label><input type="checkbox" name="remember" checked="checked" value="1" />下次自动登录</label>
+            <a href="javascript:;" target="_blank" title="忘记密码？" class="forget">忘记密码？</a>
+            <b></b>
+            <a href="register.html" target="_blank" title="立即注册">立即注册</a>
+          </div>
+          <span class="loginBtn">
+	    		  <input type="submit" value="登 录" class="submit" />
+	    		</span>
+          <div class="otherLogin">
+            <span class="title">可以使用以下方式登录：</span>
+            <ul class="loginList">
+              <li><a href="javascript:;" class="qq"></a></li>
+              <li><a href="javascript:;" class="weibo"></a></li>
+              <li><a href="javascript:;" class="baidu"></a></li>
+              <li><a href="javascript:;" class="renren"></a></li>
+              <li><a href="javascript:;" class="weixin"></a></li>
+              <li><a href="javascript:;" class="cmcc"></a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="certification_bar" onclick="Hide()" style="top: 80px; opacity: 1;">应《中华人民共和国网络安全法》要求，2017年6月1日起，使用互联网服务需要进行帐号实名认证。为保障环球通行证“评论”等功能的正常使用，请您尽快完成手机号验证，感谢您的理解和支持。<b></b></div>
+  <div class="publicFooter">
+    <div class="footer">
+      <a target="_blank" href="javascript:;">网站简介</a><b>|</b>
+      <a target="_blank" href="javascript:;">About huanqiu.com</a><b>|</b>
+      <a target="_blank" href="javascript:;">网站地图</a><b>|</b>
+      <a target="_blank" href="javascript:;">官方微博</a><b>|</b>
+      <a target="_blank" href="javascript:;">诚聘精英</a><b>|</b>
+      <a target="_blank" href="javascript:;">广告服务</a><b>|</b>
+      <a target="_blank" href="javascript:;">联系方式</a><b>|</b>
+      <a target="_blank" href="javascript:;">隐私政策</a><b>|</b>
+      <a target="_blank" href="javascript:;">服务条款</a>
+    </div>
+    <div class="copyright">© 环球网 版权所有</div>
+  </div>
+  <script type="text/javascript">
+    function Hide() {
+      var img = document.getElementById("certification_bar");
+      img.style.display = "none";
+    }
+  </script>
+</body>
+</html>
